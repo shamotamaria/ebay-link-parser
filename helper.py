@@ -22,10 +22,11 @@ def parse_element(element):
   condition = element.find("div", class_="s-item__subtitle")
   price = element.find("span", class_="s-item__price")
   product_id = parse_product_id(link['href'])
+  title = link.find("span", {"role": "heading"})
 
   data = {}
   data['product_id'] = product_id
-  data['title'] = link.text if link else ""
+  data['title'] = title.text if title else ""
   data['condition'] = condition.text if condition else ""
   data['price'] = price.text if price else ""
   data['product_url'] = link['href']
