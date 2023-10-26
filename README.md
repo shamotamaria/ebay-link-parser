@@ -1,11 +1,15 @@
 ## Python script that parses ebay link
 
-- Pagination: On each page script looks for "Next page" link and recursively call itself for that url.
+- Pagination: On each page script looks for the "Next page" link and recursively call itself for that url.
 - To filter items in a specific condition: Script accepts a parameter "new", "used", "notspecified" that maps to get-parameter `LH_ItemCondition`. Without a parameter or in case of value not listed above - parses all the items. For example,
 ```sh
 python crawler.py used #parses only items that have condition "used"
 ```
-- Future improvements: Add tests
+### As the possible improvements:
+- Add tests
+- Find more elegant solution to pass condition parameter into script
+- Add parameter to limit amount pages to be parsed
+- Make a list of urls from pagination and parse them concurrently?
 
 ## Task
 Build a crawler in Go or Python that visits the following page:
