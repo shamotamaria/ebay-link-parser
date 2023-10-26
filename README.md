@@ -8,7 +8,6 @@ python crawler.py used #parses only items that have condition "used"
 ### As the possible improvements:
 - Add tests
 - Find more elegant solution to pass condition parameter into script
-- Add parameter to limit amount pages to be parsed
 - Make a list of urls from pagination and parse them concurrently?
 
 ## Task
