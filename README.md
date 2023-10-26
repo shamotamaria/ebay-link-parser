@@ -25,7 +25,7 @@ For example: the file 234908325972.json should contain a json formatted in this 
 
 
 Bonus points:
-Make the crawler write the result files asynchronously
-Add support for pagination
-Add a parameter to only crawl items in a specific condition (New, Pre-Owned, etc).
+- Make the crawler write the result files asynchronously
+- Add support for pagination
+- Add a parameter to only crawl items in a specific condition (New, Pre-Owned, etc).
 
