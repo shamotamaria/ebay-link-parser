@@ -8,6 +8,7 @@ async def write_into_file(file_name, data):
   file_object.write(json.dumps(data))
   file_object.close()
 
+
 def compose_url_with_params(url, params):
   url_parts = list(urlparse.urlparse(url))
   query = dict(urlparse.parse_qsl(url_parts[4]))
@@ -28,8 +29,8 @@ def parse_element(element):
   data['condition'] = condition.text if condition else ""
   data['price'] = price.text if price else ""
   data['product_url'] = link['href']
-
   return data
+
 
 def parse_product_id(link):
   # parsing product_id from link https://www.ebay.com/itm/234908325972
