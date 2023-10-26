@@ -8,6 +8,10 @@ class TestHelperMethods(unittest.TestCase):
 
     def test_compose_url_with_params(self):
         url = "http://foo.bar"
+        params = {}
+        self.assertEqual(compose_url_with_params(
+            url, params), "http://foo.bar")
+        url = "http://foo.bar"
         params = {"key":2}
         self.assertEqual(compose_url_with_params(
             url, params), 'http://foo.bar?key=2')
