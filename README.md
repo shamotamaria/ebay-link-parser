@@ -1,4 +1,4 @@
-## Python script that parses ebay link
+## Python script that parses ebay link 🚀 🎉
 
 - Pagination: On each page script looks for the "Next page" link and recursively call itself for that url.
 - To filter items in a specific condition: Script accepts a parameter "new", "used", "notspecified" that maps to get-parameter `LH_ItemCondition`. Without a parameter or in case of value not listed above - parses all the items. For example,
